@@ -27,3 +27,8 @@ spec:
   sourceRef:
     kind: GitRepository
     name: fluxcd-gitops-infra
+  postBuild:
+    substitute:
+      env: "sweb"
+      cluster_name: "sweb"
+      cluster_subdomain: "k8s.sanch.pet"
